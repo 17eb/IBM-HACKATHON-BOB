@@ -1,0 +1,12 @@
+{
+  "profile_id": "loancalc_local",
+  "system": "local",
+  "dialect": "GnuCOBOL 3.2 (-std=default)",
+  "compiler_flags": ["-x", "-std=default"],
+  "source": "legacy/LOANCALC.cbl",
+  "encoding": "ascii",
+  "record_format": "LINE SEQUENTIAL (newline-terminated; trailing spaces not preserved)",
+  "input_layout": "LOAN-IN 28 bytes",
+  "output_layout": "LOAN-OUT 37 bytes + trailer 28 bytes",
+  "golden_origin": "local_gnucobol"
+}

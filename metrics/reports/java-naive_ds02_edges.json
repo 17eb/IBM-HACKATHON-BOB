@@ -1,0 +1,216 @@
+{
+  "dataset_id": "ds02_edges",
+  "candidate": "java-naive",
+  "golden_origin": "local_gnucobol",
+  "golden_path": "data/golden/ds02_edges.out",
+  "golden_sha256": "93d9e02bda2c15c73627d303751cc35c53d5b3b05ee511510467468d32774bff",
+  "candidate_sha256": "50f93609a1ed63a1795ff90d8dc7255e7b52b0f621780c4f65ef21df70c41698",
+  "input_sha256": "b3eaad94a1454a38ac87b68a0be86587a8f9b229a17d11cad7d5909fe984cb7d",
+  "status": "fail",
+  "records_expected": 25,
+  "records_actual": 25,
+  "records_matched": 14,
+  "records_mismatched": 11,
+  "trailer_match": false,
+  "mismatch_count": 23,
+  "mismatches_by_field": {
+    "MONTHLY-INT": 3,
+    "TOTAL-DUE": 11,
+    "LATE-FEE": 8,
+    "TOTAL-DUE-SUM": 1
+  },
+  "mismatches_by_rule": {
+    "R1": 3,
+    "R1+R2": 11,
+    "R2": 7,
+    "R3": 1,
+    "R5": 1
+  },
+  "mismatches": [
+    {
+      "record_no": 1,
+      "cust_id": "E0002000",
+      "field": "MONTHLY-INT",
+      "expected": "000141095",
+      "actual": "000141094",
+      "rule_id": "R1"
+    },
+    {
+      "record_no": 1,
+      "cust_id": "E0002000",
+      "field": "TOTAL-DUE",
+      "expected": "000141095",
+      "actual": "000141094",
+      "rule_id": "R1+R2"
+    },
+    {
+      "record_no": 2,
+      "cust_id": "E0002001",
+      "field": "MONTHLY-INT",
+      "expected": "000076359",
+      "actual": "000076358",
+      "rule_id": "R1"
+    },
+    {
+      "record_no": 2,
+      "cust_id": "E0002001",
+      "field": "TOTAL-DUE",
+      "expected": "000076359",
+      "actual": "000076358",
+      "rule_id": "R1+R2"
+    },
+    {
+      "record_no": 6,
+      "cust_id": "E0002005",
+      "field": "LATE-FEE",
+      "expected": "00001580",
+      "actual": "00001581",
+      "rule_id": "R2"
+    },
+    {
+      "record_no": 6,
+      "cust_id": "E0002005",
+      "field": "TOTAL-DUE",
+      "expected": "000033195",
+      "actual": "000033196",
+      "rule_id": "R1+R2"
+    },
+    {
+      "record_no": 7,
+      "cust_id": "E0002006",
+      "field": "LATE-FEE",
+      "expected": "00025939",
+      "actual": "00025940",
+      "rule_id": "R2"
+    },
+    {
+      "record_no": 7,
+      "cust_id": "E0002006",
+      "field": "TOTAL-DUE",
+      "expected": "000544733",
+      "actual": "000544734",
+      "rule_id": "R1+R2"
+    },
+    {
+      "record_no": 8,
+      "cust_id": "E0002007",
+      "field": "LATE-FEE",
+      "expected": "00026621",
+      "actual": "00026622",
+      "rule_id": "R2"
+    },
+    {
+      "record_no": 8,
+      "cust_id": "E0002007",
+      "field": "TOTAL-DUE",
+      "expected": "000559052",
+      "actual": "000559053",
+      "rule_id": "R1+R2"
+    },
+    {
+      "record_no": 9,
+      "cust_id": "E0002008",
+      "field": "LATE-FEE",
+      "expected": "00015754",
+      "actual": "00015755",
+      "rule_id": "R2"
+    },
+    {
+      "record_no": 9,
+      "cust_id": "E0002008",
+      "field": "TOTAL-DUE",
+      "expected": "000330850",
+      "actual": "000330851",
+      "rule_id": "R1+R2"
+    },
+    {
+      "record_no": 10,
+      "cust_id": "E0002009",
+      "field": "LATE-FEE",
+      "expected": "00004306",
+      "actual": "00004307",
+      "rule_id": "R2"
+    },
+    {
+      "record_no": 10,
+      "cust_id": "E0002009",
+      "field": "TOTAL-DUE",
+      "expected": "000090442",
+      "actual": "000090443",
+      "rule_id": "R1+R2"
+    },
+    {
+      "record_no": 17,
+      "cust_id": "E0002016",
+      "field": "LATE-FEE",
+      "expected": "00033231",
+      "actual": "00033232",
+      "rule_id": "R2"
+    },
+    {
+      "record_no": 17,
+      "cust_id": "E0002016",
+      "field": "TOTAL-DUE",
+      "expected": "000697868",
+      "actual": "000697869",
+      "rule_id": "R1+R2"
+    },
+    {
+      "record_no": 18,
+      "cust_id": "E0002017",
+      "field": "MONTHLY-INT",
+      "expected": "000256649",
+      "actual": "000256648",
+      "rule_id": "R1"
+    },
+    {
+      "record_no": 18,
+      "cust_id": "E0002017",
+      "field": "TOTAL-DUE",
+      "expected": "000282313",
+      "actual": "000282312",
+      "rule_id": "R1+R2"
+    },
+    {
+      "record_no": 20,
+      "cust_id": "E0002019",
+      "field": "LATE-FEE",
+      "expected": "83332498",
+      "actual": "83332500",
+      "rule_id": "R3"
+    },
+    {
+      "record_no": 20,
+      "cust_id": "E0002019",
+      "field": "TOTAL-DUE",
+      "expected": "916657497",
+      "actual": "916657499",
+      "rule_id": "R1+R2"
+    },
+    {
+      "record_no": 24,
+      "cust_id": "E0002023",
+      "field": "LATE-FEE",
+      "expected": "00024061",
+      "actual": "00024062",
+      "rule_id": "R2"
+    },
+    {
+      "record_no": 24,
+      "cust_id": "E0002023",
+      "field": "TOTAL-DUE",
+      "expected": "000505291",
+      "actual": "000505292",
+      "rule_id": "R1+R2"
+    },
+    {
+      "record_no": "TRAILER",
+      "cust_id": null,
+      "field": "TOTAL-DUE-SUM",
+      "expected": "0001754933803",
+      "actual": "0001754933809",
+      "rule_id": "R5"
+    }
+  ],
+  "mismatches_truncated": false
+}

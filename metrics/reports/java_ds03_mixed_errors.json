@@ -1,0 +1,20 @@
+{
+  "dataset_id": "ds03_mixed_errors",
+  "candidate": "java",
+  "golden_origin": "local_gnucobol",
+  "golden_path": "data/golden/ds03_mixed_errors.out",
+  "golden_sha256": "ae683452818cef167b7e70225030b06eb696ee13b9f8a4b5336e9fd41b1396dc",
+  "candidate_sha256": "ae683452818cef167b7e70225030b06eb696ee13b9f8a4b5336e9fd41b1396dc",
+  "input_sha256": "45e43811442d1a00f8c99154227a1befdf4b208d6931788ffdcc173163c9e5f2",
+  "status": "pass",
+  "records_expected": 10,
+  "records_actual": 10,
+  "records_matched": 10,
+  "records_mismatched": 0,
+  "trailer_match": true,
+  "mismatch_count": 0,
+  "mismatches_by_field": {},
+  "mismatches_by_rule": {},
+  "mismatches": [],
+  "mismatches_truncated": false
+}

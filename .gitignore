@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+legacy/build/
+modern/*/build/
+runs/
+.env
+*.class
+reports/*.json
+!reports/.gitkeep

@@ -1,0 +1,28 @@
+{
+  "dataset_id": "ds03_mixed_errors",
+  "profile_id": "loancalc_local",
+  "golden_origin": "local_gnucobol",
+  "system": "local",
+  "encoding": "ascii",
+  "record_format": "LINE SEQUENTIAL (newline-terminated; trailing spaces not preserved)",
+  "compiler": "cobc (GnuCOBOL) 3.2.0",
+  "compiler_flags": [
+    "-x",
+    "-std=default"
+  ],
+  "source": {
+    "path": "legacy/LOANCALC.cbl",
+    "sha256": "ab3e366fec5d5b7529105867f9377c856972d4a5c47007b9423aa077609cda67"
+  },
+  "input": {
+    "path": "data/inputs/ds03_mixed_errors.dat",
+    "sha256": "45e43811442d1a00f8c99154227a1befdf4b208d6931788ffdcc173163c9e5f2"
+  },
+  "golden": {
+    "path": "data/golden/ds03_mixed_errors.out",
+    "sha256": "ae683452818cef167b7e70225030b06eb696ee13b9f8a4b5336e9fd41b1396dc",
+    "records": 11
+  },
+  "captured_at": "2026-09-26T08:57:11+00:00",
+  "supersedes": null
+}

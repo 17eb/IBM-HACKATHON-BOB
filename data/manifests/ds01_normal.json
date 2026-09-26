@@ -1,0 +1,28 @@
+{
+  "dataset_id": "ds01_normal",
+  "profile_id": "loancalc_local",
+  "golden_origin": "local_gnucobol",
+  "system": "local",
+  "encoding": "ascii",
+  "record_format": "LINE SEQUENTIAL (newline-terminated; trailing spaces not preserved)",
+  "compiler": "cobc (GnuCOBOL) 3.2.0",
+  "compiler_flags": [
+    "-x",
+    "-std=default"
+  ],
+  "source": {
+    "path": "legacy/LOANCALC.cbl",
+    "sha256": "ab3e366fec5d5b7529105867f9377c856972d4a5c47007b9423aa077609cda67"
+  },
+  "input": {
+    "path": "data/inputs/ds01_normal.dat",
+    "sha256": "2158d46331a1c5cd24234759af9f8994b048b2b9e6f6cacf6fbc4d85edb46f5c"
+  },
+  "golden": {
+    "path": "data/golden/ds01_normal.out",
+    "sha256": "48ef7f5e86b653a42ee7130ddf271a126818f10185bd382808d5c846402d7695",
+    "records": 21
+  },
+  "captured_at": "2026-09-26T08:57:09+00:00",
+  "supersedes": null
+}
