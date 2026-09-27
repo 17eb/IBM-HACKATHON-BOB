@@ -1,0 +1,11 @@
+# Fixture hashes describe exact bytes; Git must not rewrite record terminators.
+*.dat -text
+*.out -text
+*.bin -text
+*.fb -text
+data/imported/** -text
+
+# Keep COBOL source bytes stable across Windows and Unix checkouts.
+*.cbl text eol=lf
+*.cob text eol=lf
+*.cpy text eol=lf

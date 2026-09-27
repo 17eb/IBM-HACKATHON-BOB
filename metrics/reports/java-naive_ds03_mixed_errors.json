@@ -1,0 +1,53 @@
+{
+  "dataset_id": "ds03_mixed_errors",
+  "candidate": "java-naive",
+  "golden_origin": "local_gnucobol",
+  "golden_path": "data/golden/ds03_mixed_errors.out",
+  "golden_sha256": "ae683452818cef167b7e70225030b06eb696ee13b9f8a4b5336e9fd41b1396dc",
+  "candidate_sha256": "ffff5384cc37a231e0129fd1e22529b2e70c8f553d5b8f7f59d1fdf5b14191f2",
+  "input_sha256": "45e43811442d1a00f8c99154227a1befdf4b208d6931788ffdcc173163c9e5f2",
+  "status": "fail",
+  "records_expected": 10,
+  "records_actual": 10,
+  "records_matched": 9,
+  "records_mismatched": 1,
+  "trailer_match": false,
+  "mismatch_count": 3,
+  "mismatches_by_field": {
+    "LATE-FEE": 1,
+    "TOTAL-DUE": 1,
+    "TOTAL-DUE-SUM": 1
+  },
+  "mismatches_by_rule": {
+    "R3": 1,
+    "R1+R2": 1,
+    "R5": 1
+  },
+  "mismatches": [
+    {
+      "record_no": 6,
+      "cust_id": "M0003005",
+      "field": "LATE-FEE",
+      "expected": "00064504",
+      "actual": "00064506",
+      "rule_id": "R3"
+    },
+    {
+      "record_no": 6,
+      "cust_id": "M0003005",
+      "field": "TOTAL-DUE",
+      "expected": "000709554",
+      "actual": "000709556",
+      "rule_id": "R1+R2"
+    },
+    {
+      "record_no": "TRAILER",
+      "cust_id": null,
+      "field": "TOTAL-DUE-SUM",
+      "expected": "0000001614526",
+      "actual": "0000001614528",
+      "rule_id": "R5"
+    }
+  ],
+  "mismatches_truncated": false
+}

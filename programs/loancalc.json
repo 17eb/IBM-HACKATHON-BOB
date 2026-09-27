@@ -1,0 +1,63 @@
+{
+  "program_id": "loancalc",
+  "platform_profile": "loancalc_local",
+  "paths": {
+    "inputs": "data/inputs",
+    "goldens": "data/golden",
+    "manifests": "data/manifests",
+    "runs": "runs",
+    "reports": "reports"
+  },
+  "cobol": {
+    "source": "legacy/LOANCALC.cbl",
+    "binary": "legacy/build/loancalc",
+    "flags": ["-x", "-std=default"]
+  },
+  "candidates": {
+    "java": {
+      "source_dir": "modern/java/src/main/java",
+      "build_dir": "modern/java/build",
+      "main_class": "com.cobolbridge.LoanCalc"
+    },
+    "java-naive": {
+      "source_dir": "modern/java-naive/src/main/java",
+      "build_dir": "modern/java-naive/build",
+      "main_class": "com.cobolbridge.naive.LoanCalcNaive"
+    }
+  },
+  "layout": {
+    "record_format": "line_sequential_lf",
+    "encoding": "ascii",
+    "identifier_field": "CUST-ID",
+    "input_fields": [
+      {"name": "CUST-ID", "width": 8},
+      {"name": "PRINCIPAL", "width": 9, "scale": 2},
+      {"name": "ANNUAL-RATE", "width": 5, "scale": 4},
+      {"name": "TERM-MONTHS", "width": 3, "scale": 0},
+      {"name": "DAYS-LATE", "width": 3, "scale": 0}
+    ],
+    "detail_fields": [
+      {"name": "CUST-ID", "width": 8, "rule": "LAYOUT"},
+      {"name": "STATUS", "width": 3, "rule": "R4"},
+      {"name": "MONTHLY-INT", "width": 9, "scale": 2, "rule": "R1"},
+      {"name": "LATE-FEE", "width": 8, "scale": 2, "rule": "R2"},
+      {"name": "TOTAL-DUE", "width": 9, "scale": 2, "rule": "R1+R2"}
+    ],
+    "trailer_prefix": "TRL",
+    "trailer_fields": [
+      {"name": "TRL-ID", "width": 3, "rule": "R5"},
+      {"name": "REC-COUNT", "width": 6, "scale": 0, "rule": "R5"},
+      {"name": "ERR-COUNT", "width": 6, "scale": 0, "rule": "R5"},
+      {"name": "TOTAL-DUE-SUM", "width": 13, "scale": 2, "rule": "R5"}
+    ],
+    "rule_overrides": [
+      {
+        "output_field": "LATE-FEE",
+        "input_field": "DAYS-LATE",
+        "operator": "gt",
+        "value": 60,
+        "rule_id": "R3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "profile_id": "zos_cp037_fb_example",
+  "system": "zos",
+  "golden_origin": "imported_ibm_fixture",
+  "example_only": true,
+  "source": "legacy/LOANCALC.cbl",
+  "copybooks": [],
+  "encoding": "cp037",
+  "record_format": "FB",
+  "input_lrecl": 28,
+  "output_lrecl": 37,
+  "compiler": "EXAMPLE ONLY: replace with the exact IBM COBOL compiler and version",
+  "compiler_options": []
+}

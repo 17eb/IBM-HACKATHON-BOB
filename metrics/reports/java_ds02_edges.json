@@ -1,0 +1,20 @@
+{
+  "dataset_id": "ds02_edges",
+  "candidate": "java",
+  "golden_origin": "local_gnucobol",
+  "golden_path": "data/golden/ds02_edges.out",
+  "golden_sha256": "93d9e02bda2c15c73627d303751cc35c53d5b3b05ee511510467468d32774bff",
+  "candidate_sha256": "93d9e02bda2c15c73627d303751cc35c53d5b3b05ee511510467468d32774bff",
+  "input_sha256": "b3eaad94a1454a38ac87b68a0be86587a8f9b229a17d11cad7d5909fe984cb7d",
+  "status": "pass",
+  "records_expected": 25,
+  "records_actual": 25,
+  "records_matched": 25,
+  "records_mismatched": 0,
+  "trailer_match": true,
+  "mismatch_count": 0,
+  "mismatches_by_field": {},
+  "mismatches_by_rule": {},
+  "mismatches": [],
+  "mismatches_truncated": false
+}

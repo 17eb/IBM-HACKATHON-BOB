@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "cobol-bridge": {
+      "command": "/ABSOLUTE/PATH/TO/cobol-bridge-mcp/.venv/bin/python",
+      "args": ["-m", "mcp_server.server"],
+      "cwd": "/ABSOLUTE/PATH/TO/cobol-bridge-mcp"
+    }
+  }
+}

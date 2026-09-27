@@ -1,0 +1,28 @@
+{
+  "dataset_id": "ds02_edges",
+  "profile_id": "loancalc_local",
+  "golden_origin": "local_gnucobol",
+  "system": "local",
+  "encoding": "ascii",
+  "record_format": "LINE SEQUENTIAL (newline-terminated; trailing spaces not preserved)",
+  "compiler": "cobc (GnuCOBOL) 3.2.0",
+  "compiler_flags": [
+    "-x",
+    "-std=default"
+  ],
+  "source": {
+    "path": "legacy/LOANCALC.cbl",
+    "sha256": "ab3e366fec5d5b7529105867f9377c856972d4a5c47007b9423aa077609cda67"
+  },
+  "input": {
+    "path": "data/inputs/ds02_edges.dat",
+    "sha256": "b3eaad94a1454a38ac87b68a0be86587a8f9b229a17d11cad7d5909fe984cb7d"
+  },
+  "golden": {
+    "path": "data/golden/ds02_edges.out",
+    "sha256": "93d9e02bda2c15c73627d303751cc35c53d5b3b05ee511510467468d32774bff",
+    "records": 26
+  },
+  "captured_at": "2026-09-26T08:57:11+00:00",
+  "supersedes": null
+}
